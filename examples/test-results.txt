@@ -1,0 +1,45 @@
+test_a1_normal_schedule (tests.test_acceptance.AcceptanceTest.test_a1_normal_schedule) ... ok
+test_a2_conflict_needs_confirmation (tests.test_acceptance.AcceptanceTest.test_a2_conflict_needs_confirmation) ... ok
+test_a3_info_gap (tests.test_acceptance.AcceptanceTest.test_a3_info_gap) ... ok
+test_a4_rule_risk (tests.test_acceptance.AcceptanceTest.test_a4_rule_risk) ... ok
+test_a5_duplicate_submission (tests.test_acceptance.AcceptanceTest.test_a5_duplicate_submission) ... ok
+test_a6_save_failed (tests.test_acceptance.AcceptanceTest.test_a6_save_failed) ... ok
+test_a7_hard_constraint_blocks_without_rescheduling (tests.test_acceptance.AcceptanceTest.test_a7_hard_constraint_blocks_without_rescheduling) ... ok
+test_a8_step_limit_keeps_findings (tests.test_acceptance.AcceptanceTest.test_a8_step_limit_keeps_findings) ... ok
+test_c1_control_changes_action_sequence (tests.test_acceptance.AcceptanceTest.test_c1_control_changes_action_sequence) ... ok
+test_output_contract_keys (tests.test_acceptance.AcceptanceTest.test_output_contract_keys) ... ok
+test_approval_is_never_downgraded_by_later_request (tests.test_idempotency.IdempotencyTest.test_approval_is_never_downgraded_by_later_request) ... ok
+test_approval_updates_in_place_without_new_draft (tests.test_idempotency.IdempotencyTest.test_approval_updates_in_place_without_new_draft) ... ok
+test_different_slot_creates_second_draft (tests.test_idempotency.IdempotencyTest.test_different_slot_creates_second_draft) ... ok
+test_duplicate_keeps_pending_confirmation (tests.test_idempotency.IdempotencyTest.test_duplicate_keeps_pending_confirmation) ... ok
+test_fresh_process_reads_existing_draft (tests.test_idempotency.IdempotencyTest.test_fresh_process_reads_existing_draft) ... ok
+test_same_request_twice_creates_one_draft (tests.test_idempotency.IdempotencyTest.test_same_request_twice_creates_one_draft) ... ok
+test_illegal_action_is_rejected (tests.test_loop.LoopBudgetTest.test_illegal_action_is_rejected) ... ok
+test_invalid_input_fails_fast (tests.test_loop.LoopBudgetTest.test_invalid_input_fails_fast) ... ok
+test_policy_crash_surfaces_as_policy_error (tests.test_loop.LoopBudgetTest.test_policy_crash_surfaces_as_policy_error) ... ok
+test_step_budget_returns_incomplete_and_keeps_findings (tests.test_loop.LoopBudgetTest.test_step_budget_returns_incomplete_and_keeps_findings) ... ok
+test_terminal_action_does_not_consume_tool_budget (tests.test_loop.LoopBudgetTest.test_terminal_action_does_not_consume_tool_budget) ... ok
+test_tool_call_budget_is_independent (tests.test_loop.LoopBudgetTest.test_tool_call_budget_is_independent) ... ok
+test_env_is_ignored_and_example_env_has_no_secret (tests.test_safety.SafetyTest.test_env_is_ignored_and_example_env_has_no_secret) ... ok
+test_failed_save_leaves_no_draft (tests.test_safety.SafetyTest.test_failed_save_leaves_no_draft) ... ok
+test_hard_constraint_guard_blocks_rescheduling_policy (tests.test_safety.SafetyTest.test_hard_constraint_guard_blocks_rescheduling_policy) ... ok
+test_hard_constraint_never_rescheduled (tests.test_safety.SafetyTest.test_hard_constraint_never_rescheduled) ... ok
+test_no_publish_wording_in_any_output (tests.test_safety.SafetyTest.test_no_publish_wording_in_any_output) ... ok
+test_no_secret_in_generated_outputs (tests.test_safety.SafetyTest.test_no_secret_in_generated_outputs) ... ok
+test_only_four_tools_and_no_publish (tests.test_safety.SafetyTest.test_only_four_tools_and_no_publish) ... ok
+test_check_rules_finds_blockers (tests.test_tools.ToolContractTest.test_check_rules_finds_blockers) ... ok
+test_check_rules_skips_undecidable (tests.test_tools.ToolContractTest.test_check_rules_skips_undecidable) ... ok
+test_injected_failure (tests.test_tools.ToolContractTest.test_injected_failure) ... ok
+test_query_slots_invalid_date (tests.test_tools.ToolContractTest.test_query_slots_invalid_date) ... ok
+test_query_slots_reports_occupancy (tests.test_tools.ToolContractTest.test_query_slots_reports_occupancy) ... ok
+test_read_material_missing_fields_keeps_partial_data (tests.test_tools.ToolContractTest.test_read_material_missing_fields_keeps_partial_data) ... ok
+test_read_material_not_found (tests.test_tools.ToolContractTest.test_read_material_not_found) ... ok
+test_read_material_ok (tests.test_tools.ToolContractTest.test_read_material_ok) ... ok
+test_save_draft_is_idempotent (tests.test_tools.ToolContractTest.test_save_draft_is_idempotent) ... ok
+test_save_draft_rejects_occupied_slot (tests.test_tools.ToolContractTest.test_save_draft_rejects_occupied_slot) ... ok
+test_unknown_tool_is_rejected (tests.test_tools.ToolContractTest.test_unknown_tool_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.030s
+
+OK

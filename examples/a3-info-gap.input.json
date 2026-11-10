@@ -1,0 +1,16 @@
+{
+  "task_id": "a3-info-gap",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M03",
+      "requested_time": "15:00",
+      "time_constraint": "preferred",
+      "note": "素材只填了标题和类目"
+    }
+  ],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

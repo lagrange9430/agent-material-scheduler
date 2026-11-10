@@ -1,0 +1,16 @@
+{
+  "task_id": "a2-conflict",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M01",
+      "requested_time": "18:00",
+      "time_constraint": "preferred",
+      "note": "希望晚间 18:00 发布"
+    }
+  ],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

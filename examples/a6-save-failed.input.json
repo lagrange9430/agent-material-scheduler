@@ -1,0 +1,17 @@
+{
+  "task_id": "a6-save-failed",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M05",
+      "requested_time": "11:00",
+      "time_constraint": "preferred",
+      "note": "模拟草稿存储不可用"
+    }
+  ],
+  "faults": ["M05:save_draft"],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

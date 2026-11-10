@@ -1,0 +1,34 @@
+{
+  "task_id": "a7-hard-block",
+  "status": "blocked",
+  "mode": "llm:deepseek-flash",
+  "steps_used": 3,
+  "tool_calls_used": 2,
+  "limits": {
+    "max_steps_per_material": 8,
+    "max_tool_calls_per_material": 6,
+    "max_total_tool_calls": 40
+  },
+  "materials": [
+    {
+      "material_id": "M06",
+      "review_status": "pass",
+      "risk_reasons": [],
+      "requested_slot": "2026-11-10T20:00",
+      "suggested_slot": null,
+      "slot_status": "conflict_unresolved",
+      "slot_evidence": "2026-11-10 占用 14:00(M08), 18:00(M00), 20:00(M07)；可用 09:00, 10:00, 11:00, 12:00, 13:00, 15:00, 16:00, 17:00, 19:00, 21:00",
+      "needs_user_confirmation": false,
+      "pending_items": [],
+      "draft_status": "not_saved",
+      "draft_id": null,
+      "deviation": null,
+      "outcome": "blocked",
+      "conclusion": "已阻断：20:00 已被占用且不可改期，未擅自调整",
+      "steps_used": 3,
+      "tool_calls_used": 2
+    }
+  ],
+  "incomplete_reason": null,
+  "trace_path": "examples/trace/llm-a7-hard-block.jsonl"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "a9-batch",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M02",
+      "requested_time": "10:00",
+      "time_constraint": "preferred",
+      "note": "正常素材"
+    },
+    {
+      "material_id": "M04",
+      "requested_time": "16:00",
+      "time_constraint": "preferred",
+      "note": "规则违规素材"
+    },
+    {
+      "material_id": "M01",
+      "requested_time": "18:00",
+      "time_constraint": "preferred",
+      "note": "时段冲突素材"
+    }
+  ],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

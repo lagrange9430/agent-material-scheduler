@@ -1,0 +1,34 @@
+{
+  "task_id": "a3-info-gap",
+  "status": "completed",
+  "mode": "llm:deepseek-flash",
+  "steps_used": 2,
+  "tool_calls_used": 1,
+  "limits": {
+    "max_steps_per_material": 8,
+    "max_tool_calls_per_material": 6,
+    "max_total_tool_calls": 40
+  },
+  "materials": [
+    {
+      "material_id": "M03",
+      "review_status": "info_gap",
+      "risk_reasons": [],
+      "requested_slot": "2026-11-10T15:00",
+      "suggested_slot": null,
+      "slot_status": "not_checked",
+      "slot_evidence": "",
+      "needs_user_confirmation": false,
+      "pending_items": [],
+      "draft_status": "not_saved",
+      "draft_id": null,
+      "deviation": null,
+      "outcome": "info_gap",
+      "conclusion": "资料不足，无法判定：duration_seconds, copyright.scope, has_ad_label，需补充后再提交",
+      "steps_used": 2,
+      "tool_calls_used": 1
+    }
+  ],
+  "incomplete_reason": null,
+  "trace_path": "examples/trace/llm-a3-info-gap.jsonl"
+}

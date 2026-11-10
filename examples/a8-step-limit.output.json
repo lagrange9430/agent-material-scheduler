@@ -1,0 +1,53 @@
+{
+  "task_id": "a8-step-limit",
+  "status": "incomplete",
+  "mode": "offline_mock",
+  "steps_used": 2,
+  "tool_calls_used": 2,
+  "limits": {
+    "max_steps_per_material": 2,
+    "max_tool_calls_per_material": 6,
+    "max_total_tool_calls": 40
+  },
+  "materials": [
+    {
+      "material_id": "M04",
+      "review_status": "risk",
+      "risk_reasons": [
+        {
+          "rule_id": "R01",
+          "severity": "blocker",
+          "message": "版权未获授权、不在授权范围或已过期",
+          "evidence": "status=revoked；expires=2026-01-31 已过期"
+        },
+        {
+          "rule_id": "R02",
+          "severity": "blocker",
+          "message": "文案含广告法禁用绝对化用语",
+          "evidence": "命中禁用词 ['最', '第一']；原文：全网最低价直播间 全网最低价，效果第一"
+        },
+        {
+          "rule_id": "R05",
+          "severity": "major",
+          "message": "广告或医疗类目缺少广告标识",
+          "evidence": "类目 ads 但 has_ad_label=False"
+        }
+      ],
+      "requested_slot": "2026-11-10T16:00",
+      "suggested_slot": null,
+      "slot_status": "not_checked",
+      "slot_evidence": "",
+      "needs_user_confirmation": false,
+      "pending_items": [],
+      "draft_status": "not_saved",
+      "draft_id": null,
+      "deviation": null,
+      "outcome": "incomplete",
+      "conclusion": "达到执行上限，未完成",
+      "steps_used": 2,
+      "tool_calls_used": 2
+    }
+  ],
+  "incomplete_reason": "step_budget: 素材 M04 步数达到上限 2，未能给出最终结论",
+  "trace_path": "examples/trace/a8-step-limit.jsonl"
+}

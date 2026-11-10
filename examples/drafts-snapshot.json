@@ -1,0 +1,31 @@
+{
+  "drafts": {
+    "a0b249715cd1": {
+      "draft_id": "D-a0b24971",
+      "key": "a0b249715cd1",
+      "task_id": "a1-normal",
+      "material_id": "M02",
+      "date": "2026-11-10",
+      "proposed_slot": "10:00",
+      "requested_slot": "10:00",
+      "needs_confirmation": false,
+      "status": "draft_saved",
+      "revision": 1,
+      "created_at": "2026-11-09T22:11:02+08:00"
+    },
+    "436a4e79720c": {
+      "draft_id": "D-436a4e79",
+      "key": "436a4e79720c",
+      "task_id": "a2-conflict",
+      "material_id": "M01",
+      "date": "2026-11-10",
+      "proposed_slot": "19:00",
+      "requested_slot": "18:00",
+      "needs_confirmation": false,
+      "status": "draft_confirmed",
+      "revision": 2,
+      "created_at": "2026-11-09T22:11:02+08:00",
+      "updated_at": "2026-11-09T22:11:03+08:00"
+    }
+  }
+}

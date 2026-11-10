@@ -1,0 +1,16 @@
+{
+  "task_id": "a1-normal",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M02",
+      "requested_time": "10:00",
+      "time_constraint": "preferred",
+      "note": "常规发布，无特殊要求"
+    }
+  ],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

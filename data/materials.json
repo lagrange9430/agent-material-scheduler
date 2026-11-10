@@ -1,0 +1,85 @@
+{
+  "materials": [
+    {
+      "material_id": "M01",
+      "title": "秋季新品开箱",
+      "caption": "开箱即惊艳，细节拉满",
+      "duration_seconds": 45,
+      "category": "product",
+      "platform": "douyin",
+      "copyright": {
+        "status": "granted",
+        "scope": ["douyin", "xiaohongshu"],
+        "expires": "2027-06-30"
+      },
+      "has_ad_label": false
+    },
+    {
+      "material_id": "M02",
+      "title": "通勤穿搭三件套",
+      "caption": "一周不重样的通勤搭配",
+      "duration_seconds": 30,
+      "category": "product",
+      "platform": "douyin",
+      "copyright": {
+        "status": "granted",
+        "scope": ["douyin"],
+        "expires": "2027-03-31"
+      },
+      "has_ad_label": false
+    },
+    {
+      "material_id": "M03",
+      "title": "门店探店实录",
+      "caption": "跟着镜头逛一圈",
+      "category": "product",
+      "platform": "xiaohongshu",
+      "copyright": {
+        "status": "granted",
+        "expires": "2026-12-31"
+      }
+    },
+    {
+      "material_id": "M04",
+      "title": "全网最低价直播间",
+      "caption": "全网最低价，效果第一",
+      "duration_seconds": 50,
+      "category": "ads",
+      "platform": "douyin",
+      "copyright": {
+        "status": "revoked",
+        "scope": ["douyin"],
+        "expires": "2026-01-31"
+      },
+      "has_ad_label": false
+    },
+    {
+      "material_id": "M05",
+      "title": "收纳好物合集",
+      "caption": "小空间也能整整齐齐",
+      "duration_seconds": 40,
+      "category": "product",
+      "platform": "douyin",
+      "copyright": {
+        "status": "granted",
+        "scope": ["douyin", "weibo"],
+        "expires": "2027-01-31"
+      },
+      "has_ad_label": false
+    },
+    {
+      "material_id": "M06",
+      "title": "夜间护肤流程",
+      "caption": "三步完成夜间修护",
+      "duration_seconds": 38,
+      "category": "product",
+      "platform": "xiaohongshu",
+      "copyright": {
+        "status": "granted",
+        "scope": ["xiaohongshu"],
+        "expires": "2027-09-30"
+      },
+      "has_ad_label": false
+    }
+  ]
+}

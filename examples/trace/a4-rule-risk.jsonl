@@ -1,0 +1,4 @@
+{"step": 1, "material_id": "M04", "action": "read_material", "args": {"material_id": "M04"}, "reason": "尚无线索：任何审核或排期判断都需要先拿到素材元数据", "ok": true, "error_code": null, "result_summary": "读取成功：M04《全网最低价直播间》，时长 50s，类目 ads", "next_action": "check_rules"}
+{"step": 2, "material_id": "M04", "action": "check_rules", "args": {"material_id": "M04"}, "reason": "元数据完整，进入合规检查，合规通过前不占用时段", "ok": true, "error_code": null, "result_summary": "规则检查：R01 版权授权(blocker)；R02 绝对化用语(blocker)；R05 广告标识(major)", "next_action": "block"}
+{"step": 3, "material_id": "M04", "action": "block", "args": {"reason": "命中阻断规则：R01, R02, R05", "slot_status": "not_checked"}, "reason": "规则检查返回 3 条阻断违规，合规不可绕过", "ok": true, "error_code": null, "result_summary": "（终止动作，无工具返回）", "next_action": null}
+{"event": "summary", "status": "blocked", "steps_used": 3, "tool_calls_used": 2, "materials": [{"material_id": "M04", "outcome": "blocked", "draft_status": "not_saved", "draft_id": null}], "incomplete_reason": null}

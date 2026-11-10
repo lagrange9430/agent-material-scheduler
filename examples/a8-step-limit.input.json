@@ -1,0 +1,16 @@
+{
+  "task_id": "a8-step-limit",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M04",
+      "requested_time": "16:00",
+      "time_constraint": "preferred",
+      "note": "故意把步数上限压到 2，观察是否保留已查出的风险"
+    }
+  ],
+  "options": {
+    "max_steps": 2,
+    "max_tool_calls": 6
+  }
+}

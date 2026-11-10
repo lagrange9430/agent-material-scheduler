@@ -1,0 +1,51 @@
+{
+  "rules": [
+    {
+      "id": "R01",
+      "name": "版权授权",
+      "check": "copyright",
+      "severity": "blocker",
+      "blocks_schedule": true,
+      "message": "版权未获授权、不在授权范围或已过期"
+    },
+    {
+      "id": "R02",
+      "name": "绝对化用语",
+      "check": "forbidden_keywords",
+      "fields": ["title", "caption"],
+      "keywords": ["最", "第一", "国家级", "顶级"],
+      "severity": "blocker",
+      "blocks_schedule": true,
+      "message": "文案含广告法禁用绝对化用语"
+    },
+    {
+      "id": "R03",
+      "name": "时长上限",
+      "check": "max_int",
+      "field": "duration_seconds",
+      "limit": 60,
+      "severity": "major",
+      "blocks_schedule": true,
+      "message": "单条素材时长超过平台上限 60 秒"
+    },
+    {
+      "id": "R04",
+      "name": "同素材重复排期",
+      "check": "not_scheduled",
+      "severity": "major",
+      "blocks_schedule": true,
+      "message": "该素材当天已出现在排期表中"
+    },
+    {
+      "id": "R05",
+      "name": "广告标识",
+      "check": "conditional_flag",
+      "when_field": "category",
+      "when_in": ["ads", "medical"],
+      "require_field": "has_ad_label",
+      "severity": "major",
+      "blocks_schedule": true,
+      "message": "广告或医疗类目缺少广告标识"
+    }
+  ]
+}

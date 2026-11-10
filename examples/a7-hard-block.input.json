@@ -1,0 +1,16 @@
+{
+  "task_id": "a7-hard-block",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M06",
+      "requested_time": "20:00",
+      "time_constraint": "hard",
+      "note": "品牌方指定 20:00，不可更改"
+    }
+  ],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

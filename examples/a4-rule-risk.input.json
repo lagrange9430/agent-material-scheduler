@@ -1,0 +1,16 @@
+{
+  "task_id": "a4-rule-risk",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M04",
+      "requested_time": "16:00",
+      "time_constraint": "preferred",
+      "note": "素材含绝对化用语，版权已撤回"
+    }
+  ],
+  "options": {
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

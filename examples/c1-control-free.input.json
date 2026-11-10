@@ -1,0 +1,17 @@
+{
+  "task_id": "c1-control-free",
+  "date": "2026-11-10",
+  "materials": [
+    {
+      "material_id": "M01",
+      "requested_time": "18:00",
+      "time_constraint": "preferred",
+      "note": "对照实验：仅把排期表中的 18:00 释放，其余输入与 a2-conflict 完全一致"
+    }
+  ],
+  "options": {
+    "schedule_file": "schedule_alt.json",
+    "max_steps": 8,
+    "max_tool_calls": 6
+  }
+}

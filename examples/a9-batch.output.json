@@ -1,0 +1,95 @@
+{
+  "task_id": "a9-batch",
+  "status": "needs_confirmation",
+  "mode": "offline_mock",
+  "steps_used": 13,
+  "tool_calls_used": 10,
+  "limits": {
+    "max_steps_per_material": 8,
+    "max_tool_calls_per_material": 6,
+    "max_total_tool_calls": 40
+  },
+  "materials": [
+    {
+      "material_id": "M02",
+      "review_status": "pass",
+      "risk_reasons": [],
+      "requested_slot": "2026-11-10T10:00",
+      "suggested_slot": "2026-11-10T10:00",
+      "slot_status": "available",
+      "slot_evidence": "2026-11-10 占用 14:00(M08), 18:00(M00), 20:00(M07)；可用 09:00, 10:00, 11:00, 12:00, 13:00, 15:00, 16:00, 17:00, 19:00, 21:00",
+      "needs_user_confirmation": false,
+      "pending_items": [],
+      "draft_status": "saved",
+      "draft_id": "D-a0b24971",
+      "deviation": null,
+      "outcome": "scheduled",
+      "conclusion": "已存草稿 D-a0b24971（10:00），未发布",
+      "steps_used": 5,
+      "tool_calls_used": 4
+    },
+    {
+      "material_id": "M04",
+      "review_status": "risk",
+      "risk_reasons": [
+        {
+          "rule_id": "R01",
+          "severity": "blocker",
+          "message": "版权未获授权、不在授权范围或已过期",
+          "evidence": "status=revoked；expires=2026-01-31 已过期"
+        },
+        {
+          "rule_id": "R02",
+          "severity": "blocker",
+          "message": "文案含广告法禁用绝对化用语",
+          "evidence": "命中禁用词 ['最', '第一']；原文：全网最低价直播间 全网最低价，效果第一"
+        },
+        {
+          "rule_id": "R05",
+          "severity": "major",
+          "message": "广告或医疗类目缺少广告标识",
+          "evidence": "类目 ads 但 has_ad_label=False"
+        }
+      ],
+      "requested_slot": "2026-11-10T16:00",
+      "suggested_slot": null,
+      "slot_status": "not_checked",
+      "slot_evidence": "",
+      "needs_user_confirmation": false,
+      "pending_items": [],
+      "draft_status": "not_saved",
+      "draft_id": null,
+      "deviation": null,
+      "outcome": "blocked",
+      "conclusion": "已阻断：命中规则 R01, R02, R05，不进入排期",
+      "steps_used": 3,
+      "tool_calls_used": 2
+    },
+    {
+      "material_id": "M01",
+      "review_status": "pass",
+      "risk_reasons": [],
+      "requested_slot": "2026-11-10T18:00",
+      "suggested_slot": "2026-11-10T19:00",
+      "slot_status": "conflict_resolved",
+      "slot_evidence": "2026-11-10 占用 14:00(M08), 18:00(M00), 20:00(M07)；可用 09:00, 10:00, 11:00, 12:00, 13:00, 15:00, 16:00, 17:00, 19:00, 21:00",
+      "needs_user_confirmation": true,
+      "pending_items": [
+        "确认把 18:00 调整为 19:00（原时段已被占用）"
+      ],
+      "draft_status": "saved",
+      "draft_id": "D-436a4e79",
+      "deviation": {
+        "from": "18:00",
+        "to": "19:00",
+        "reason": "requested slot occupied"
+      },
+      "outcome": "pending_confirmation",
+      "conclusion": "已给出建议时段，等待用户确认后才能定稿，未发布",
+      "steps_used": 5,
+      "tool_calls_used": 4
+    }
+  ],
+  "incomplete_reason": null,
+  "trace_path": "examples/trace/a9-batch.jsonl"
+}

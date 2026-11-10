@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Asia/Shanghai",
+  "day_start": "09:00",
+  "day_end": "22:00",
+  "booked": [
+    {"slot": "14:00", "material_id": "M08", "title": "午间直播切片"},
+    {"slot": "18:00", "material_id": "M00", "title": "整点开箱预热"},
+    {"slot": "20:00", "material_id": "M07", "title": "晚间上新"}
+  ]
+}

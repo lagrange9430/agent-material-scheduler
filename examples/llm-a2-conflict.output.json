@@ -1,0 +1,40 @@
+{
+  "task_id": "a2-conflict",
+  "status": "needs_confirmation",
+  "mode": "llm:deepseek-flash",
+  "steps_used": 5,
+  "tool_calls_used": 4,
+  "limits": {
+    "max_steps_per_material": 8,
+    "max_tool_calls_per_material": 6,
+    "max_total_tool_calls": 40
+  },
+  "materials": [
+    {
+      "material_id": "M01",
+      "review_status": "pass",
+      "risk_reasons": [],
+      "requested_slot": "2026-11-10T18:00",
+      "suggested_slot": "2026-11-10T19:00",
+      "slot_status": "conflict_resolved",
+      "slot_evidence": "2026-11-10 占用 14:00(M08), 18:00(M00), 20:00(M07)；可用 09:00, 10:00, 11:00, 12:00, 13:00, 15:00, 16:00, 17:00, 19:00, 21:00",
+      "needs_user_confirmation": true,
+      "pending_items": [
+        "确认把 18:00 调整为 19:00（原时段已被占用）"
+      ],
+      "draft_status": "saved",
+      "draft_id": "D-436a4e79",
+      "deviation": {
+        "from": "18:00",
+        "to": "19:00",
+        "reason": "requested slot occupied"
+      },
+      "outcome": "pending_confirmation",
+      "conclusion": "已给出建议时段，等待用户确认后才能定稿，未发布",
+      "steps_used": 5,
+      "tool_calls_used": 4
+    }
+  ],
+  "incomplete_reason": null,
+  "trace_path": "examples/trace/llm-a2-conflict.jsonl"
+}
